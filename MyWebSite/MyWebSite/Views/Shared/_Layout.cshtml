@@ -1,30 +1,90 @@
 ﻿<!DOCTYPE html>
+
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - ASP.NET Uygulamam</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
+    <title>Around a Travel Category Flat Bootstrap responsive Website Template | Home :: w3layouts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Around Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <link href="~/web/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="~/web/css/style.css" type="text/css" media="all" />
+    <link href="~/web/css/font-awesome.css" rel="stylesheet">
+
+    <link href='http://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
+    <script src="~/web/js/jquery-1.11.1.min.js"></script>
+    <script src="~/web/js/bootstrap.js"></script>
+    <script type="text/javascript" src="~/web/js/move-top.js"></script>
+    <script type="text/javascript" src="~/web/js/easing.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+            });
+        });
+    </script>
+    <link href="~/web/css/animate.css" rel="stylesheet" type="text/css" media="all">
+    <script src="~/web/js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Uygulama adı", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+    <div class="header">
+        <div class="top-header">
+            <div class="container">
+                <div class="top-header-info">
+                    <div class="top-header-left wow fadeInLeft animated" data-wow-delay=".5s">
+                        <p>Hoş Geldiniz</p>
+                    </div>
+                    <div class="top-header-right wow fadeInRight animated" data-wow-delay=".5s">
+                        <div class="top-header-right-info">
+                            <ul>
+                                <li><a href="login.html">Giriş Yap</a></li>
+                                <li><a href="signup.html">Kayıt Ol</a></li>
+                            </ul>
+                        </div>
+                       
+                        <div class="clearfix"> </div>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Giriş Sayfası", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Hakkında", "About", "Home")</li>
-                    <li>@Html.ActionLink("İletişim", "Contact", "Home")</li>
-                </ul>
+        </div>
+        <div class="bottom-header">
+            <div class="container">
+                <div class="logo wow fadeInDown animated" data-wow-delay=".5s">
+                   @* <h1><a href="index.html"><img src="~/web/images/logo.jpg" alt="" /></a></h1>*@
+                    <h4 style="color:gray">MY Web Site</h4><br />
+                </div>
+                <div class="top-nav wow fadeInRight animated" data-wow-delay=".5s">
+                    <nav class="navbar navbar-default">
+                        <div class="container">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                Menu
+                            </button>
+                        </div>
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li><a href="index.html" class="active">Anasayfa</a></li>
+                                <li><a href="about.html">Hakkımızda</a></li>
+                                <li>
+                                    <a href="#" class="dropdown-toggle hvr-bounce-to-bottom" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Rehber<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="hvr-bounce-to-bottom" href="gallery1.html">Oteller</a></li>
+                                        <li><a class="hvr-bounce-to-bottom" href="gallery2.html">Restoranlar</a></li>
+                                        <li><a class="hvr-bounce-to-bottom" href="gallery2.html">Müzeler</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="contact.html">İletişim</a></li>
+                            </ul>
+                            <div class="clearfix"> </div>
+                        </div>
+                    </nav>
+                </div>
             </div>
         </div>
     </div>
@@ -32,12 +92,13 @@
         @RenderBody()
         <hr />
         <footer>
+
             <p>&copy; @DateTime.Now.Year - ASP.NET Uygulamam</p>
         </footer>
     </div>
 
-    @Scripts.Render("~/bundles/jquery")
+    @*@Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
+    @RenderSection("scripts", required: false)*@
 </body>
 </html>

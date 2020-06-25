@@ -167,6 +167,50 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="web\about.html" />
+    <Content Include="web\blog.html" />
+    <Content Include="web\codes.html" />
+    <Content Include="web\contact.html" />
+    <Content Include="web\css\animate.css" />
+    <Content Include="web\css\bootstrap.css" />
+    <Content Include="web\css\font-awesome.css" />
+    <Content Include="web\css\lightbox.css" />
+    <Content Include="web\css\style.css" />
+    <Content Include="web\gallery1.html" />
+    <Content Include="web\gallery2.html" />
+    <Content Include="web\images\10.jpg" />
+    <Content Include="web\images\11.jpg" />
+    <Content Include="web\images\2.jpg" />
+    <Content Include="web\images\3.jpg" />
+    <Content Include="web\images\4.png" />
+    <Content Include="web\images\5.png" />
+    <Content Include="web\images\7.jpg" />
+    <Content Include="web\images\8.jpg" />
+    <Content Include="web\images\9.jpg" />
+    <Content Include="web\images\ab.jpg" />
+    <Content Include="web\images\arrow.png" />
+    <Content Include="web\images\close.png" />
+    <Content Include="web\images\g1.jpg" />
+    <Content Include="web\images\g2.jpg" />
+    <Content Include="web\images\g3.jpg" />
+    <Content Include="web\images\logo.jpg" />
+    <Content Include="web\images\next.png" />
+    <Content Include="web\images\prev.png" />
+    <Content Include="web\images\t1.jpg" />
+    <Content Include="web\images\t2.jpg" />
+    <Content Include="web\images\t3.jpg" />
+    <Content Include="web\images\tick.png" />
+    <Content Include="web\index.html" />
+    <Content Include="web\js\bootstrap.js" />
+    <Content Include="web\js\easing.js" />
+    <Content Include="web\js\jquery-1.11.1.min.js" />
+    <Content Include="web\js\lightbox-plus-jquery.min.js" />
+    <Content Include="web\js\move-top.js" />
+    <Content Include="web\js\responsiveslides.min.js" />
+    <Content Include="web\js\wow.min.js" />
+    <Content Include="web\login.html" />
+    <Content Include="web\signup.html" />
+    <Content Include="web\single.html" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -192,10 +236,15 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="web\fonts\fontawesome-webfont.eot" />
+    <Content Include="web\fonts\fontawesome-webfont.ttf" />
+    <Content Include="web\fonts\fontawesome-webfont.woff" />
+    <Content Include="web\fonts\FontAwesome.otf" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="web\webfonts\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

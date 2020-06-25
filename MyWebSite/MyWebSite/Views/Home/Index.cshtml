@@ -2,30 +2,59 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
-
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+<div class="banner">
+    <div class="slider">
+        <h2 class="wow shake animated" data-wow-delay=".5s">Trip</h2>
+        <div class="border"></div>
+        <script src="~/web/js/jquery-1.11.1.min.js"></script>
+        <script src="~/web/js/responsiveslides.min.js"></script>
+        <script>
+            $(function () {
+                $("#slider3").responsiveSlides({
+                    auto: true,
+                    pager: true,
+                    nav: true,
+                    speed: 500,
+                    namespace: "callbacks",
+                    before: function () {
+                        $('.events').append("<li>before event fired.</li>");
+                    },
+                    after: function () {
+                        $('.events').append("<li>after event fired.</li>");
+                    }
+                });
+            });
+        </script>
+        <div id="top" class="callbacks_container-wrap">
+            <ul class="rslides" id="slider3">
+                <li>
+                    <div class="slider-info">
+                        <h3 class="wow fadeInRight animated" data-wow-delay=".5s">Lorem ipsum dolor sit amet</h3>
+                        <p class="wow fadeInLeft animated" data-wow-delay=".5s">Curabitur eget metus eget erat vehicula semper vitae sed leo</p>
+                        <div class="more-button wow fadeInRight animated" data-wow-delay=".5s">
+                            <a href="single.html">Click Here	</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="slider-info">
+                        <h3>Consectetur adipiscing elit</h3>
+                        <p>Quisque nisl risus, egestas in convallis vitae, fringilla cursus magna</p>
+                        <div class="more-button">
+                            <a href="single.html">Read More	</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="slider-info">
+                        <h3>Proin eget consequat ante	</h3>
+                        <p> Suspendisse bibendum dictum metus, at finibus elit dignissim nec	</p>
+                        <div class="more-button">
+                            <a href="single.html">Click Here	</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </div>
 </div>
