@@ -1,0 +1,115 @@
+﻿@using MyWebSite.Models.Classes
+@model List<Blog>
+@{
+    ViewBag.Title = "BlogDetail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="blog-top-grids">
+    </div><div class="col-md-8 blog-top-left-grid">
+        <div class="left-blog">
+            <div class="blog-left">
+                <div class="blog-left-left wow fadeInUp animated" data-wow-delay=".5s">
+
+
+                    @foreach (var i in Model)
+                    {
+                        <div class="blog-left-left wow fadeInUp animated" data-wow-delay=".5s">
+                            <p>@i.Date</p>
+                            <a href="single.html"><img src="@i.BlogImage" alt="" /></a>
+                        </div>
+                        <div class="blog-left-right wow fadeInUp animated" data-wow-delay=".5s">
+                            <a href="/Blog/BlogDetail/@i.Id"><h3>@i.Title</h3></a>
+                            <p>
+                                @i.Content
+                            </p>
+                        </div>
+                    }
+
+                    <div class="clearfix"> </div>
+                </div>
+
+        </div>
+    </div>
+    </div>
+    <div class="col-md-4 blog-top-right-grid">
+        <div class="Categories wow fadeInUp animated" data-wow-delay=".5s">
+            <h3>Son Yorumlar</h3>
+            <ul>
+                <li><a href="#">Phasellus sem leo, interdum quis risus</a></li>
+                <li><a href="#">Nullam egestas nisi id malesuada aliquet </a></li>
+                <li><a href="#"> Donec condimentum purus urna venenatis</a></li>
+                <li><a href="#">Ut congue, nisl id tincidunt lobor mollis</a></li>
+                <li><a href="#">Cum sociis natoque penatibus et magnis</a></li>
+                <li><a href="#">Suspendisse nec magna id ex pretium</a></li>
+            </ul>
+        </div>
+        <div class="Categories wow fadeInUp animated" data-wow-delay=".5s">
+            <h3>Eklenen Bloglar</h3>
+            <ul class="marked-list offs1">
+                <li><a href="#">May 2016 (7)</a></li>
+                <li><a href="#">April 2016 (11)</a></li>
+                <li><a href="#">March 2016 (12)</a></li>
+                <li><a href="#">February 2016 (14)</a> </li>
+                <li><a href="#">January 2016 (10)</a></li>
+                <li><a href="#">December 2016 (12)</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+<div class="row col-md-6" >
+    <div class="comments">
+        <h3 class="wow fadeInUp animated" data-wow-delay=".5s">Recent Comments</h3>
+        <div class="comments-text wow fadeInUp animated" data-wow-delay=".5s">
+            <div class="col-md-1 comments-left">
+                <img src="~/web/images/t1.jpg" alt="" />
+            </div>
+            <div class="col-md-9 comments-right">
+                <h5>Admin</h5>
+                <a href="#">Phasellus sem leointerdum risus</a>
+                <p>March 16,2016 6:09:pm</p>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+        <div class="comments-text wow fadeInUp animated" data-wow-delay=".5s">
+            <div class="col-md-1 comments-left">
+                <img src="~/web/images/t2.jpg" alt="" />
+            </div>
+            <div class="col-md-9 comments-right">
+                <h5>Admin</h5>
+                <a href="#">Phasellus sem leointerdum risus</a>
+                <p>March 16,2016 6:09:pm</p>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+        <div class="comments-text wow fadeInUp animated" data-wow-delay=".5s">
+            <div class="col-md-1 comments-left">
+                <img src="~/web/images/t3.jpg" alt="" />
+            </div>
+            <div class="col-md-9 comments-right">
+                <h5>Admin</h5>
+                <a href="#">Phasellus sem leointerdum risus</a>
+                <p>March 16,2016 6:09:pm</p>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+
+    <div class="col-md-6">
+        <div class="contact-form wow fadeInUp animated" data-wow-delay=".5s">
+            <h4>Bir Yorum Yapın</h4>
+            <form>
+                <input type="text" placeholder="Kullanıcı Adı" required="">
+                <input type="email" placeholder="Mail" required="">
+                <textarea placeholder="Yorum" required=""></textarea>
+                <br />
+                <button class="btn1 btn-1 btn-1b">Yorum Yap</button>
+            </form>
+        </div>
+    </div>
+</div>
+<br />	
